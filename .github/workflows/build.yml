@@ -19,7 +19,7 @@ jobs:
             ~/.local/share/racket
           key: default
       - name: Install Racket
-        uses: Bogdanp/setup-racket@v0.8
+        uses: /setup-racket@v1.6.1
         with:
           architecture: 'x64'
           distribution: 'full'
