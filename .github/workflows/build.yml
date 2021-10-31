@@ -11,19 +11,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Cache Racket dependencies
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.cache/racket
-            ~/.local/share/racket
-          key: default
       - name: Install Racket
         uses: Bogdanp/setup-racket@v0.8
         with:
           architecture: 'x64'
           distribution: 'full'
-          version: '7.9'
+          variant: 'BC' # an FFI blog post requirement
+          version: '8.2'
           packages: 'gregor,frog,honu'
       #- name: Setup upterm session
       #  uses: lhotari/action-upterm@v1
