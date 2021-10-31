@@ -16,7 +16,7 @@ jobs:
         with:
           architecture: 'x64'
           distribution: 'full'
-          variant: 'BS' # an FFI blog post requirement
+          variant: 'BC' # an FFI blog post requirement
           version: '8.2'
           packages: 'gregor,frog,honu'
       #- name: Setup upterm session
