@@ -26,3 +26,6 @@ blog:
 
 clean:
 	rm -f $(TARGETS)
+
+dummy:
+	echo 1
