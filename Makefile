@@ -1,3 +1,4 @@
+#comment
 TARGETS=contact.html index.html new-members.html people.html seminars.html software.html teaching.html publications.html
 .PHONY: blog
 
